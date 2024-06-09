@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank_Task.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Transactions;
 
 namespace Bank_Task.Users
 {
-    public class Admin : Person
+    public class Admin : Person, IAdmin
     {
         public int AdminId { get; }
         public string Role { get; set; }
@@ -16,7 +17,7 @@ namespace Bank_Task.Users
             // Implementation to generate unique AdminId
         }
 
-        public void AddClient(Client client)
+        public void AddClient(IClient client)
         {
             // Implementation to add a new client to the system
         }

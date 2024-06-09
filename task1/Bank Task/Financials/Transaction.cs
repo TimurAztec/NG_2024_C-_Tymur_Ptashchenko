@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank_Task.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Financials
 {
-    internal class TransactionDetails
+    public class TransactionDetails
     {
         public int TransactionId { get; set; }
         public decimal Amount { get; set; }
@@ -20,7 +21,7 @@ namespace Bank_Task.Financials
         }
     }
 
-    internal class Transaction
+    public class Transaction : ITransaction
     {
         protected int TransactionId;
         protected decimal Amount;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank_Task.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Financials
 {
-    public class Balance
+    public class Balance : IBalance
     {
         protected int BalanceId;
         protected int ClientId;
@@ -14,7 +15,7 @@ namespace Bank_Task.Financials
 
         public Balance(int clientId)
         {
-            // Implementation for unique BalanceId
+            // Implementation for unique BalanceIds
             ClientId = clientId;
         }
 
