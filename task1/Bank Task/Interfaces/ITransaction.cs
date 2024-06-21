@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Interfaces
 {
-    internal interface ITransaction
+    public interface ITransaction
     {
         void RecordTransaction(TransactionDetails transactionData);
         TransactionDetails GetTransactionDetails(int transactionId);

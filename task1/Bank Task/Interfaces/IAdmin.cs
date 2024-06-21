@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Interfaces
 {
-    public interface IAdmin : IPerson
+    public interface IAdmin
     {
         int AdminId { get; }
         string Role { get; set; }
+        string Name { get; set; }
+        string Address { get; set; }
 
         void AddClient(IClient client);
-        void RemoveClient();
+        void RemoveClient(int clientId);
         List<Transaction> ViewTransactions();
         void GenerateReport();
     }

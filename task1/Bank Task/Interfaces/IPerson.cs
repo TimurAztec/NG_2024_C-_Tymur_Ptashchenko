@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Interfaces
 {
-    public interface IPerson : IClient
+    public interface IPerson
     {
         int PersonId { get; }
+        string Name { get; set; }
         string Address { get; set; }
     }
 }

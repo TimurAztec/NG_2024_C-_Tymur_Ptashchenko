@@ -9,8 +9,9 @@ namespace Bank_Task.Interfaces
     public interface IClient
     {
         int ClientId { get; }
-        string Name { get; set; }
         string AccountNumber { get; set; }
+        string Name { get; set; }
+        string Address { get; set; }
 
         void Deposit(decimal amount);
         void Withdraw(decimal amount);
