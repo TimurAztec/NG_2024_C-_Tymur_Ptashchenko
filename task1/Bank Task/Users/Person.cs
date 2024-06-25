@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Bank_Task.Users
 {
-    public class Person : Client, IPerson
+    public class Person : IPerson
     {
         public int PersonId { get; }
+        public string Name { get; set; }
         public string Address { get; set; }
         public Person()
         {
