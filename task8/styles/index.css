@@ -1,0 +1,160 @@
+header {
+    margin: 30px 50px 30px 110px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color__base);
+    position: absolute;
+    width: calc(100% - 160px);
+}
+
+#logo {
+    height: fit-content;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+#logo__title {
+    font-family: "Akshar", sans-serif;
+    font-weight: 500;
+}
+
+#logo__icon {
+    height: 100%;
+    width: 54px;
+    fill: var(--text-color__base);
+}
+
+#navigation__title {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+#navigation__panel > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+#pedal_bike {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+#navigation__panel > ul > li {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#image__accent {
+    --image-height: 60vh;
+    position: absolute;
+    height: var(--image-height);
+    z-index: -5;
+    right: 120px;
+    top: calc(50% - var(--image-height) / 2.3)
+}
+
+#image__background {
+    background-image: url("../template/content/title.png");
+    background-size: 1200px;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+#title {
+    position: absolute;
+    z-index: -5;
+    left: 120px;
+    top: calc(50% - 15vh);
+    color: var(--text-color__base);
+}
+
+#title > #title__addition {
+    font-family: "Akshar", sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 2px dashed var(--text-color__base);
+    padding: 10px;
+    display: inline-block;
+}
+
+#title > #title__main {
+    font-family: "Holtwood One SC", sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+#title > #title__main > * {
+    margin-top: -1rem;
+}
+
+#title > #title__main > #title__main__1 {
+    font-size: 5rem;
+}
+
+#title > #title__main > #title__main__2 {
+    font-size: 3rem;
+}
+
+#discount {
+    position: absolute;
+    z-index: -5;
+    right: 65vh;
+    top: calc(50% + 20vh);
+    color: white;
+
+    width: 20vh;
+    height: 20vh;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Akshar", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#discount__circle {
+    width: 18vh;
+    height: 18vh;
+    border: 3px dashed white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#price {
+    margin-bottom: -0.5rem;
+}
+
+#price > #price__1{
+    font-family: "Akshar", sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+#only {
+    margin-top: -0.5rem;
+}
