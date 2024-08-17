@@ -100,18 +100,17 @@ main {
     font-family: "Holtwood One SC", sans-serif;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-}
-
-#title > #title__main > * {
-    margin-top: -1rem;
+    line-height: 1.1;
 }
 
 #title > #title__main > #title__main__1 {
     font-size: 5rem;
+    display: block;
 }
 
 #title > #title__main > #title__main__2 {
     font-size: 3rem;
+    display: block;
 }
 
 #discount {
@@ -143,18 +142,11 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#price {
-    margin-bottom: -0.5rem;
+    line-height: 1.1;
 }
 
 #price > #price__1{
     font-family: "Akshar", sans-serif;
     font-weight: 200;
     font-size: 2.5rem;
-}
-
-#only {
-    margin-top: -0.5rem;
 }
