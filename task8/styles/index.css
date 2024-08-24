@@ -1,4 +1,14 @@
 header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../template/content/title.png");
+    background-size: 1200px;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
+#top__menu {
     margin: 30px 50px 30px 110px;
     display: flex;
     justify-content: space-between;
@@ -67,16 +77,6 @@ main {
     z-index: -5;
     right: 120px;
     top: calc(50% - var(--image-height) / 2.3)
-}
-
-#image__background {
-    background-image: url("../template/content/title.png");
-    background-size: 1200px;
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -10;
 }
 
 #title {
@@ -149,4 +149,148 @@ main {
     font-family: "Akshar", sans-serif;
     font-weight: 200;
     font-size: 2.5rem;
+}
+
+#promo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh 10vh;
+}
+
+#promo p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+#promo__item1 {
+    background-image: url("../template/content/section_1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 394px;
+    z-index: -10;
+    color: white;
+    font-family: "Akshar", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+#promo__item2 {
+    background-image: url("../template/content/section_2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 175px;
+    z-index: -10;
+    color: white;
+    font-family: "Akshar", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+#promo__item3 {
+    background-image: url("../template/content/section_3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 177px;
+    z-index: -10;
+    color: white;
+    font-family: "Akshar", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.promo__text__big {
+    font-size: 1.5rem;
+}
+
+.promo__split__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 2vh 0 2vh;
+}
+
+#choose__and__enjoy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Akshar", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem 10rem;
+}
+
+#choose__and__enjoy__button {
+    display: flex;
+    justify-content: center;
+}
+
+#choose__and__enjoy__button span {
+    background-color: #ffdb58;
+    padding: 5px 15px;
+}
+
+#choose__and__enjoy__logo {
+    font-family: "Holtwood One SC", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+#burgers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.burger {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Akshar", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.burger__image {
+    height: 256px;
+    width: 256px;
+}
+
+.burger p {
+    padding: 0 0 15px 0;
+}
+
+.burger__name {
+    padding: 0 0 5px 0;
+}
+
+.burger__button {
+    display: flex;
+    justify-content: center;
+}
+
+.burger__button span {
+    font-family: "Holtwood One SC", sans-serif;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 10px 20px;
 }
